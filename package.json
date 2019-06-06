@@ -1,0 +1,19 @@
+{
+  "name": "ionic-module",
+  "version": "1.0.0",
+  "description": "A simple Ionic Module Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenosoares/ionic-module.git"
+  },
+  "author": "Breno Soares",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brenosoares/ionic-module/issues"
+  },
+  "homepage": "https://github.com/brenosoares/ionic-module#readme"
+}
