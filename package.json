@@ -2,9 +2,15 @@
   "name": "ionic-module",
   "version": "1.0.0",
   "description": "A simple Ionic Module Test",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ngc": "ngc",
+    "build": "rm -rf dist && npm run ngc",
+    "publishPackage": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -15,5 +21,20 @@
   "bugs": {
     "url": "https://github.com/brenosoares/ionic-module/issues"
   },
-  "homepage": "https://github.com/brenosoares/ionic-module#readme"
+  "homepage": "https://github.com/brenosoares/ionic-module#readme",
+  "devDependencies": {
+    "@angular/common": "5.2.11",
+    "@angular/compiler": "5.2.11",
+    "@angular/compiler-cli": "5.2.11",
+    "@angular/core": "5.2.11",
+    "@angular/forms": "5.2.11",
+    "@angular/http": "5.2.11",
+    "@angular/platform-browser": "5.2.11",
+    "@angular/platform-browser-dynamic": "5.2.11",
+    "@types/node": "^9.4.6",
+    "ionic-angular": "3.9.2",
+    "rxjs": "5.5.11",
+    "typescript": "~2.6.2",
+    "zone.js": "0.8.26"
+  }
 }
